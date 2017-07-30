@@ -1,0 +1,6 @@
+find_program(MAKENSIS_EXECUTABLE NAMES makensis)
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(NSIS DEFAULT_MSG MAKENSIS_EXECUTABLE)
+
+mark_as_advanced(MAKENSIS_EXECUTABLE)
