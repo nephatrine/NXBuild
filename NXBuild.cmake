@@ -809,7 +809,7 @@ function(nx_target nxParentVariable nxTargetName nxTargetType)
 	endif()
 
 	if(NOT DEFINED nxTargetVersion)
-		set(nxTargetVersion ${PROJECT_VERSION}})
+		set(nxTargetVersion ${PROJECT_VERSION})
 		set(nxTargetPostfix "-${nxTargetVersion}")
 	endif()
 
