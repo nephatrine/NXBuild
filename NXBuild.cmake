@@ -929,7 +929,7 @@ function(nx_target nxParentVariable nxTargetName nxTargetType)
 			INSTALL "${nxTargetName}${nxTargetPostfix}"
 			PUBLIC ${INCLUDE_AGGREGATE})
 		nx_target_link_libraries(${nxTargetStatic}
-			FORCE_INTERFACE ${LINK_AGGREGATE})
+			PUBLIC ${LINK_AGGREGATE})
 		if(NX_CMAKE_INSTALL_PACKAGE AND nxTargetInstall)
 			install(TARGETS ${nxTargetStatic}
 				EXPORT "${nxTargetName}${NXP}"
