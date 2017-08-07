@@ -1126,7 +1126,7 @@ function(nx_target nxParentVariable nxTargetName nxTargetType)
 		PARENT_SCOPE)
 	set(${nxParentVariable}_STATIC ${${nxParentVariable}_STATIC} ${nxTargetStatic}
 		PARENT_SCOPE)
-	set(${nxParentVariable}_SOURCE ${${nxParentVariable}_SOURCE} ${nxTargetInterface}
+	set(${nxParentVariable}_INLINE ${${nxParentVariable}_INLINE} ${nxTargetInterface}
 		PARENT_SCOPE)
 	set(${nxParentVariable} ${${nxParentVariable}} ${nxTargetsToAdd}
 		PARENT_SCOPE)
